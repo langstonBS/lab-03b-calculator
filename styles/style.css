@@ -106,10 +106,15 @@ button {
     margin-left: 32px;
 }
 
+
+//not happy with this result character limit solution ...
+
 .result {
     display: flex;
     justify-content: center;
     margin-left: 32px;
+    width: 140px;
+    overflow: scroll;
 }
 
 .operator {
