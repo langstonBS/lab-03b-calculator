@@ -72,12 +72,13 @@ header {
 }
 
 .operator-block {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     justify-content: space-around;
     align-items: center;
     border: 2px solid black;
     background-color: lightseagreen;
+    margin-top: 4%;
 }
 
 .operator-heading {
