@@ -72,16 +72,19 @@ header {
 }
 
 .operator-block, .operation-dropdown {
-    /* display: flex;
-    flex-direction: row; */
+    display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 4%;
+    border: 2px solid black;
 }
 
 .operator-block {
     background-color: lightseagreen;
-    border: 2px solid black;
+}
+
+.operation-dropdown {
+    background-color: white;
 }
 
 .operator-heading {
@@ -112,11 +115,7 @@ button {
     align-items: center;
     justify-content: center;
     margin-left: 32px;
-}
-
-
-//not happy with this result character limit solution ...
-// current issue: result is no longer spaced appropriately
+}p
 
 .result {
     display: flex;
@@ -128,7 +127,6 @@ button {
     display: flex;
     justify-content: center;
 }
-
 
 footer {
     display: flex;
