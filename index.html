@@ -18,7 +18,15 @@
         </div>
     </header>
     <main>
-        <section class="operator-block">
+        <div class="operator-block dropdown-menu">
+        <select name="operation" id="operation-dropdown">
+              <option id="addition" value="addition">Addition</option>
+              <option id="subtraction" value="subtraction">Subtraction</option>
+              <option id="multiplication" value="multiplication">Multiplication</option>
+              <option id="division" value="division">Division</option>
+            </select>
+        </div>
+        <section class="operator-block addition-body" id="addition-body">
             <div class="operator-heading">
                 <div>Addition</div>
             </div>
@@ -27,11 +35,11 @@
                 <div class="operator">+</div>
                 <input id="add-input-2" type="number" />
                 <button id="add-button">=</button>
-                <div id="add-result" class="result">result</div>
+                <div id="add-result" class="result" style="margin-left: 32px">result</div>
             </div>
 
         </section>
-        <section class="operator-block">
+        <section class="operator-block subtraction-body" id="subtraction-body">
             <div class="operator-heading">
                 <div>Subtraction</div>
             </div>
@@ -40,11 +48,11 @@
                 <div class="operator">-</div>
                 <input id="sub-input-2" type="number" />
                 <button id="sub-button">=</button>
-                <div id="sub-result" class="result">result</div>
+                <div id="sub-result" class="result" style="margin-left: 32px">result</div>
            </div>
 
         </section>
-        <section class="operator-block">
+        <section class="operator-block multiplication-body" id="multiplication-body">
             <div class="operator-heading">
                 <div>Multiplication</div>
             </div>
@@ -53,11 +61,11 @@
                 <div class="operator">*</div>
                 <input id="mult-input-2" type="number" />
                 <button id="mult-button">=</button>
-                <div id="mult-result" class="result">result</div>
+                <div id="mult-result" class="result" style="margin-left: 32px">result</div>
             </div>
 
         </section>
-        <section class="operator-block">
+        <section class="operator-block division-body" id="division-body">
             <div class="operator-heading">
                 <div>Division</div>
             </div>
@@ -66,7 +74,7 @@
                 <div class="operator">/</div>
                 <input id="div-input-2" type="number" />
                 <button id="div-button">=</button>
-                <div id="div-result" class="result">result</div>
+                <div id="div-result" class="result" style="margin-left: 32px">result</div>
             </div>
 
         </section>

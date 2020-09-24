@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 // import functions and grab DOM elements
 
 import {
@@ -46,3 +47,105 @@ divButton.addEventListener("click", (e) => {
 });
 
 // set event listeners to update state and DOM
+
+// current task: add a dropdown that alternates between functions
+// default state is addition?
+// perhaps the text "addition" is the place that the dropdown displays
+// if addition == selected, then addition display:"inherit", and sub/mult/div display:"none";
+
+// way to inject this html into the div>Addition<div heading?:
+
+// <select name="operation" id="operation-dropdown">
+//   <option id="addition" value="addition">Addition</option>
+//   <option id="subtraction" value="subtraction">Subtraction</option>
+//   <option id="multiplication" value="multiplication">Multiplication</option>
+//   <option id="division" value="division">Division</option>
+// </select>
+
+const operationDropdown = document.getElementById("operation-dropdown");
+// const index = operationDropdown[operationDropdown.selectedIndex];
+// const operationIndex = operationDropdown.selectedIndex;
+
+
+operationDropdown.onchange = function grabIndex() {
+  console.log(this.selectedIndex);
+  let index = this.selectedIndex;
+  let selectedOperation = operationDropdown.value;
+  let additionBody = document.getElementById("addition-body");
+  let subtractionBody = document.getElementById("subtraction-body");
+  let multiplicationBody = document.getElementById("multiplication-body");
+  let divisionBody = document.getElementById("division-body");
+
+
+  if (selectedOperation === "addition") {
+    additionBody.style.display = "inherit";
+    subtractionBody.style.display = "none";
+    multiplicationBody.style.display = "none";
+    divisionBody.style.display = "none";
+
+    console.log("Addition!");
+  }
+
+  if (selectedOperation === "subtraction") {
+    additionBody.style.display = "none";
+    subtractionBody.style.display = "inherit";
+    multiplicationBody.style.display = "none";
+    divisionBody.style.display = "none";
+    console.log("Subtraction!");
+  }
+
+  if (selectedOperation === "multiplication") {
+    additionBody.style.display = "none";
+    subtractionBody.style.display = "none";
+    multiplicationBody.style.display = "inherit";
+    divisionBody.style.display = "none";
+    console.log("Multiplication!");
+  }
+
+  if (selectedOperation === "division") {
+    additionBody.style.display = "none";
+    subtractionBody.style.display = "none";
+    multiplicationBody.style.display = "none";
+    divisionBody.style.display = "inherit";
+    console.log("Division!");
+  }
+
+}
+
+
+
+
+
+// operationDropdown.addEventListener("click", (e) => {
+//   if (selectedOperation === "addition") {
+//     // grabber.style.display = "inherit";
+//     console.log("Addition!");
+//   } else if (!selectedOperation === "addition") {
+//     // grabber.style.display = "none";
+//   }
+
+//   if (selectedOperation === "subtraction") {
+//     // grabber.style.display = "inherit";
+//     console.log("Subtraction!");
+//   } else if (!selectedOperation === "subtraction") {
+//     // grabber.style.display = "none";
+//   }
+
+//   if (selectedOperation === "multiplication") {
+//     // grabber.style.display = "inherit";
+//     console.log("Multiplication!");
+//   } else if (!selectedOperation === "multiplication") {
+//     // grabber.style.display = "none";
+//   }
+
+//   if (selectedOperation === "division") {
+//     // grabber.style.display = "inherit";
+//     console.log("Division!");
+//   } else if (!selectedOperation === "division") {
+//     // grabber.style.display = "none";
+//   }
+
+// });
+
+// console.log(operationDropdown);
+// console.log(selectedOperation);
