@@ -44,7 +44,6 @@ main {
 body, footer, input {
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-
 }
 
 section {
@@ -133,4 +132,9 @@ footer {
 
 header img {
     height: var(--header-height);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
 }
