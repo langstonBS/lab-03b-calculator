@@ -66,19 +66,22 @@ section {
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    /* background-color: var(--color3);
     height: var(--header-height);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow); */
 }
 
-.operator-block {
+.operator-block, .operation-dropdown {
     /* display: flex;
     flex-direction: row; */
     justify-content: space-around;
     align-items: center;
-    border: 2px solid black;
-    background-color: lightseagreen;
     margin-top: 4%;
+}
+
+.operator-block {
+    background-color: lightseagreen;
+    border: 2px solid black;
 }
 
 .operator-heading {
@@ -119,7 +122,6 @@ button {
     display: flex;
     justify-content: center;
     width: 140px;
-    overflow: scroll;
 }
 
 .operator {
@@ -134,8 +136,6 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* background-color: var(--color3); */
-    /* box-shadow: var(--shadow); */
 }
 
 
