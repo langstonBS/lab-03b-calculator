@@ -58,6 +58,8 @@ operationDropdown.onchange = function grabIndex() {
   let multiplicationBody = document.getElementById("multiplication-body");
   let divisionBody = document.getElementById("division-body");
 
+  // fixing the ugliness involves writing a function that takes all of the spaghetti nonsense below and
+  // sets all style.display values to "none";
 
   if (selectedOperation === "addition") {
     additionBody.style.display = "inherit";
