@@ -23,6 +23,7 @@ export function grabIndex() {
         subtractionBody.style.display = "inherit";
         multiplicationBody.style.display = "none";
         divisionBody.style.display = "none";
+
         console.log("Subtraction!");
     }
 
@@ -31,6 +32,7 @@ export function grabIndex() {
         subtractionBody.style.display = "none";
         multiplicationBody.style.display = "inherit";
         divisionBody.style.display = "none";
+
         console.log("Multiplication!");
     }
 
@@ -39,6 +41,7 @@ export function grabIndex() {
         subtractionBody.style.display = "none";
         multiplicationBody.style.display = "none";
         divisionBody.style.display = "inherit";
+
         console.log("Division!");
     }
 }
